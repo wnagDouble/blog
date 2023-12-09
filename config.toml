@@ -1,0 +1,51 @@
+baseURL = 'https://wnagdouble.github.io/'
+languageCode = 'zh-CN'
+theme = "JuiceBar"
+title = "Double Blog"
+
+[params]
+author = "Wang Double"
+description = "人生如逆旅，我亦是行人。"
+authorImage = "/images/profile.jpg"
+paginate = 5 
+Title = "Wang Double"
+content = "爱卿，你可知罪   (ˊ˘ˋ*)♡"
+imageUrl = "/images/avatar.jpg"
+
+# To add a new social icon 
+# More social icons can be found in JuiceBar\layouts\partials\svg.html.
+[[params.social]]
+name = "email"
+url = "mailto:muadouble@gmail.com"
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+
+# To add a new navigation link
+[[menu.main]]
+name = "About"
+url = "/about"
+[[menu.main]]
+name = "Blog"
+url = "/post"
+[[menu.main]]
+name = "Categories"
+url = "/categories"
+
+# If using the giscus commenting system
+#[params.giscus]
+#repo = "ENTER REPO HERE"
+#repoID = "ENTER REPO ID HERE"
+#category = "ENTER CATEGORY NAME HERE"
+#categoryID = "ENTER CATEGORY ID HERE"
+#mapping = "og:title"
+#reactionsEnabled = "1"
+#emitMetadata = "0"
+#inputPosition = "bottom"
+#lang = "en"
+#loading = "lazy"
+
+# Used for outputting the documentation (required).
+[outputs]
+home = ["HTML", "RSS", "JSON"]
