@@ -5,7 +5,7 @@ categories: ['Nginx']
 draft: false
 ---
 # 前后端分离PHP项目线上部署记录
->前提是已具备基本LNMP环境。以后端的视角记录。
+>前提是已具备基本LNMP环境。以后端的视角记录。主要是Nginx配置。
 ## 背景
 项目所在目录：`/var/www/html/project_name/`  
 前端项目所在目录：`/var/www/html/project_name/web/`  
@@ -43,7 +43,7 @@ server {
     location ^~ /api/ {#【3】
         add_header access-control-allow-origin *;
 
-        proxy_pass  http://127.0.0.1:8082;
+        proxy_pass  http://127.0.0.1:8082;#将api路径下的请求转发到后端
         proxy_connect_timeout 1800;
         proxy_read_timeout 1800;
         proxy_send_timeout 1800;
@@ -69,7 +69,9 @@ server {
   在这个location块中，所有以/api/开头的请求都会被反向代理到http://127.0.0.1:8888，并且/api/前缀会被去除。这是通过proxy_pass和rewrite两个指令实现的。  
 ## 后端部署  
 在`/var/www/html/project_name/api/`下上传代码。 
-### 配置nginx
+### 配置nginx  
+这个后端的Nginx配置写得不好。server里实际可以不需要指定二级域名（api.domain.com)，只需要指定端口就可以了。这个二级域名在项目实际运行当中，并没有直接使用。
+后端的接口调用都是通过前端的Nginx转发的。这个域名没用但解析了，不大安全。改进方法待定。
 ```nginx
 server {
     listen 80;
@@ -152,6 +154,6 @@ vim ~/.ssh/authorized_keys
 将自己的公钥添加到authorized_keys文件中。  
 **PS:** 如果登录方式不是SSH可以略过。  
 ### 需要一个SSL证书  
-**解决方法**：使用[Let's Encrypt](https://letsencrypt.org/)免费SSL证书。具体流程参考另一篇博客。
+**解决方法**：使用[Let's Encrypt](https://letsencrypt.org/)免费SSL证书。
 
 
