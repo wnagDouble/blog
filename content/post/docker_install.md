@@ -1,8 +1,8 @@
 ---
-title: "Docker安装"
+title: "CentOS下安装Docker"
 date: 2023-12-10T13:42:49+08:00
 categories: ['Docker']
-tags: ['Docker','笔记']
+tags: ['Docker','CentOS']
 ---
 # Docker入门安装&使用
 > 仅记录自己学习Docker的过程。安装的是Docker Engine不是Desktop。  
@@ -25,6 +25,7 @@ sudo yum install docker-ce docker-ce-cli containerd.io docker-buildx-plugin dock
 ```shell  
 sudo systemctl start docker
 ```  
+可用`sudo systemctl status docker`查看Docker状态。
 ### 测试Docker  
 ```shell  
 sudo docker run hello-world
