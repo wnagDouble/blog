@@ -32,9 +32,9 @@ url = "/post"
 [[menu.main]]
 name = "Categories"
 url = "/categories"
-[[menu.main]]
-name = "About"
-url = "/about"
+#[[menu.main]]
+#name = "About"
+#url = "/about"
 
 # If using the giscus commenting system
 [params.giscus]
