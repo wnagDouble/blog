@@ -4,7 +4,6 @@ date: 2023-12-10T13:42:49+08:00
 categories: ['Docker']
 tags: ['Docker','CentOS']
 ---
-# Docker入门安装&使用
 > 仅记录自己学习Docker的过程。安装的是Docker Engine不是Desktop。  
 ## 运行环境  
 - 操作系统：CentOS Linux 8  

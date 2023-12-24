@@ -4,7 +4,6 @@ date: 2023-12-24T15:00:53+08:00
 categories: []
 draft: false
 ---
-# Github GraphQL API  
 Github GraphQL API是Github提供的一种API接口。它可以让你更方便的获取Github上的数据。
 请求该API最直观最简单的方式就是使用[Github GraphQL API资源管理器](https://docs.github.com/zh/graphql/overview/explorer)。  
 

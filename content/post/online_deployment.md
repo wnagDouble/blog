@@ -4,7 +4,6 @@ date: 2023-12-23T18:05:16+08:00
 categories: ['Nginx']
 draft: false
 ---
-# 前后端分离PHP项目线上部署记录
 >前提是已具备基本LNMP环境。以后端的视角记录。主要是Nginx配置。
 ## 背景
 项目所在目录：`/var/www/html/project_name/`  

@@ -5,7 +5,6 @@ categories: ['Docker']
 tags: ['Docker','CentOS','PHP']
 draft: true
 ---
-# CentOS下使用Docker搭建LNMP开发环境  
 ## 运行环境
 - 操作系统：CentOS Linux 8
 - Docker：Docker Engine - Community 24.0.7  

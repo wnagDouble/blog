@@ -1,10 +1,9 @@
 ---
-title: "Http Toolkit Android"
+title: "使用Http Toolkit Android抓包的简易方法"
 date: 2023-10-21T23:03:03+08:00
 categories: ['其它']
 tags: ['Http Toolkit','Android']
 ---
-# 使用Http Toolkit Android抓包的简易方法
 ## 主要步骤
 ### 1. 在电脑上安装Http Toolkit
 [Http Toolkit Windows端下载地址](https://httptoolkit.com/download/win-exe/)

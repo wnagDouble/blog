@@ -4,7 +4,6 @@ date: 2023-12-24T14:30:08+08:00
 categories: []
 draft: false
 ---
-# Github Pages 评论系统 Giscus  
 ## Github配置  
 登录[github网站](https://github.com/)，找到自己要集成giscus的仓库。点击`Settings`，找到`Discussions `。勾选复选框。  
 具体操作可参考[官方文档](https://docs.github.com/zh/discussions/quickstart)。  
