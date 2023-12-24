@@ -24,27 +24,30 @@ tag = "tags"
 
 # To add a new navigation link
 [[menu.main]]
-name = "About"
-url = "/about"
+name = "Todo"
+url = "/todo"
 [[menu.main]]
 name = "Blog"
 url = "/post"
 [[menu.main]]
 name = "Categories"
 url = "/categories"
+[[menu.main]]
+name = "About"
+url = "/about"
 
 # If using the giscus commenting system
-#[params.giscus]
-#repo = "ENTER REPO HERE"
-#repoID = "ENTER REPO ID HERE"
-#category = "ENTER CATEGORY NAME HERE"
-#categoryID = "ENTER CATEGORY ID HERE"
-#mapping = "og:title"
-#reactionsEnabled = "1"
-#emitMetadata = "0"
-#inputPosition = "bottom"
-#lang = "en"
-#loading = "lazy"
+[params.giscus]
+repo = "wnagDouble/wnagdouble.github.io"
+repoID = "R_kgDOKL5y6g"
+category = "Announcements"
+categoryID = "DIC_kwDOKL5y6s4Cb9eJ"
+mapping = "og:title"
+reactionsEnabled = "1"
+emitMetadata = "0"
+inputPosition = "bottom"
+lang = "zh-CN"
+loading = "lazy"
 
 # Used for outputting the documentation (required).
 [outputs]
